@@ -5,4 +5,8 @@ class AssetsManager {
   static const String RadioIcon = 'assets/radio.jpg';
   static const String SebhaIcon = 'assets/sebha_icon.png';
   static const String HagithIcon = 'assets/hadith_icon.png';
+  static const String HeadSebhaLight = 'assets/head_sebha_logo.png';
+  static const String BodySebhaLight = 'assets/body_sebha_logo.png';
+  static const String HeadSebhaDark = 'assets/head_sebha_dark.png';
+  static const String BodySebhaDark = 'assets/body_sebha_dark.png';
 }

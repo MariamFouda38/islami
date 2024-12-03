@@ -1,5 +1,3 @@
-import 'dart:ui_web';
-
 import 'package:flutter/material.dart';
 import 'package:islami_app/my_app/core/asets_manager.dart';
 import 'package:islami_app/my_app/presentation/tabs/quran_tab/widgets/quran_item.dart';
@@ -8,7 +6,7 @@ import 'package:islami_app/my_app/presentation/tabs/quran_tab/widgets/quran_tab_
 class QuranTab extends StatelessWidget {
   QuranTab({super.key});
 
-  List<String> suraName = [
+  List<String> SuraNameList = [
     "الفاتحه",
     "البقرة",
     "آل عمران",
@@ -124,7 +122,7 @@ class QuranTab extends StatelessWidget {
     "الفلق",
     "الناس"
   ];
-  List<int> versesNumber = [];
+  List<String> VersesNumberList = [];
 
   @override
   Widget build(BuildContext context) {
@@ -142,12 +140,25 @@ class QuranTab extends StatelessWidget {
                   color: Theme.of(context).dividerColor,
                 ),
                 itemBuilder: (context, index) => QuranItem(
-                    suraName: suraName[index],
-                    versesNumber: versesNumber[index].toString()),
-                itemCount: suraName.length,
+                    suraItem: SuraItem(
+                        index: index,
+                        suraName: SuraNameList[index],
+                        versesNumber: VersesNumberList[index])),
+                itemCount: SuraNameList.length,
               ))
         ],
       ),
     );
   }
+}
+
+class SuraItem {
+  String suraName;
+  String versesNumber;
+  int index;
+
+  SuraItem(
+      {required this.index,
+      required this.suraName,
+      required this.versesNumber});
 }

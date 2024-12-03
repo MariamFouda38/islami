@@ -3,6 +3,7 @@ import 'package:islami_app/my_app/core/color_manager.dart';
 
 class MyTheme {
   static ThemeData lightTheme = ThemeData(
+      primaryColor: ColorsManager.goldColor,
       appBarTheme: AppBarTheme(
           backgroundColor: Colors.transparent,
           centerTitle: true,

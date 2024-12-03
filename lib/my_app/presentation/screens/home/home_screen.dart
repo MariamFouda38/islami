@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:islami_app/my_app/core/asets_manager.dart';
 import 'package:islami_app/my_app/core/strings_manager.dart';
-import 'package:islami_app/my_app/presentation/tabs/hadith_tab.dart';
+import 'package:islami_app/my_app/presentation/tabs/hadeth/hadith_tab.dart';
 import 'package:islami_app/my_app/presentation/tabs/quran_tab.dart';
 import 'package:islami_app/my_app/presentation/tabs/radio_tab.dart';
 import 'package:islami_app/my_app/presentation/tabs/sebha_tab.dart';
@@ -63,4 +63,10 @@ class HomeScreen extends StatefulWidget {
   }
 
   void setState(Null Function() param0) {}
+
+  @override
+  State<StatefulWidget> createState() {
+    // TODO: implement createState
+    throw UnimplementedError();
+  }
 }

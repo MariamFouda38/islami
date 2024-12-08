@@ -3,6 +3,7 @@ import 'package:islami_app/my_app/core/color_manager.dart';
 
 class MyTheme {
   static ThemeData lightTheme = ThemeData(
+      primaryColor: ColorsManager.goldColor,
       appBarTheme: AppBarTheme(
           backgroundColor: Colors.transparent,
           centerTitle: true,
@@ -14,5 +15,11 @@ class MyTheme {
       bottomNavigationBarTheme: BottomNavigationBarThemeData(
           backgroundColor: ColorsManager.goldColor,
           selectedItemColor: Colors.black,
-          unselectedItemColor: Colors.white));
+          unselectedItemColor: Colors.white),
+      textTheme: TextTheme(
+          labelMedium: TextStyle(
+              fontWeight: FontWeight.w400, fontSize: 22, color: Colors.black),
+          titleMedium: TextStyle(
+              color: Colors.black, fontSize: 18, fontWeight: FontWeight.w100)),
+      dividerColor: Color(0xFFB7935F));
 }

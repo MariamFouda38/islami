@@ -5,4 +5,5 @@ class StringsManager {
   static const String Hadithlabel = ' hadith';
   static const String Radiolabel = ' radio';
   static const String settinglabel = ' setting';
+  static const String ElHadithlabel = ' Hadith';
 }
